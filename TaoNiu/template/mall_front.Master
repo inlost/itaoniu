@@ -1,0 +1,85 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mall_front.master.vb" Inherits="TaoNiu.mall_front" %>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"> 
+    <title>桃牛商城 - 品牌正品 商城保障</title>
+    <%
+        Server.Execute("../server_page/header.aspx?place=mall")
+        %>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="function">
+        <div id="functionBox">
+            <p id="funLeft"><%Call getFunLeft()%></p>
+            <p id="funRight"><%Call getFunRight()%></p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="header-box">
+                <div id="logo_serach" class="afterClear">
+                    <div id="mall_logo">
+                    
+                    </div>
+                    <div id="mall_search">
+                        <form action="../mall/search.aspx" method="post">
+                            
+                            <input id="strSearch" name="q" type="text"placeholder="搜索商城中的商品" />
+                            <input id="subSearch" type="submit" value="搜索" />
+                        </form>
+                    </div>
+                </div>
+                <div id="mall_nav">
+                    <ul class="afterClear f_left">
+                        <li class="curChn"><a href="../mall/index.aspx" id="selected">首页</a></li>
+                        <li><a href="../mall/index.aspx" >品牌旗舰店</a></li>
+                        <li><a href="../mall/index.aspx" >品牌折扣</a></li>
+                        <li><a href="../mall/reg.aspx" >商城入驻</a></li>
+                        <li><a href="../mall/index.aspx" >商家入驻</a></li>
+                    </ul>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="content">
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+            <hr />
+            <div id="linkList">
+                <a href="#">关于桃牛</a>
+                <a href="#">营销中心</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">帮助中心</a>
+                <a href="#">诚征英才</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">版权说明</a>
+                <a href="#">加入商城</a>
+                <a href="#">开放平台</a>
+                <a href="#">桃牛联盟</a>
+            </div>
+            <div id="cps">
+                <a id="wj" href="http://www.gx.cyberpolice.cn/liuzhou/index.asp?cityP=%C1%F8%D6%DD%CA%D0"></a>
+                <div id="cpTxt">
+                    <p>Copyright © 2010-2011 iTaoNiu.com 版权所有</p>
+                    <p>增值电信业务经营许可证：桂B2-20080224 </p>                
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

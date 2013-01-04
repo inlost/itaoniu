@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mall.master.vb" Inherits="TaoNiu.mall" %>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"> 
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%
+        Try
+            Server.Execute("server_page/header.aspx?place=center")
+        Catch ex As Exception
+            Server.Execute("../server_page/header.aspx?place=pCenter")
+        End Try
+        %>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+        <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="content">
+            <div id="sidebar">
+                <ul id="main_list">
+                    <li><a <% Call setId("信息概览")%> href="<%call siteUrl() %>mall/mall_admin.aspx?at=info"><span>信息概览</span></a></li>
+                    <li><a <% Call setId("商城店铺")%> href="<%call siteUrl() %>mall/mall_shops.aspx?at=shops"><span>商城店铺</span></a></li>
+                    <li><a <% Call setId("商城设置")%> href="<%call siteUrl() %>mall/mall_setings.aspx?at=set"><span>商城设置</span></a></li>
+                    <li><a <% Call setId("报表系统")%> href="<%call siteUrl() %>mall/mall_report.aspx?at=report"><span>报表系统</span></a></li>
+                    <li><a <% Call setId("广告系统")%> href="<%call siteUrl() %>mall/mall_ad.aspx?at=ad"><span>广告系统</span></a></li>
+                    <li><a <% Call setId("商家发信")%> href="<%call siteUrl() %>user_center_fav.aspx?at=fav"><span>商家发信</span></a></li>
+                    <li><a <% Call setId("商家发信")%> href="<%call siteUrl() %>user_center_fav.aspx?at=fav"><span>会员发信</span></a></li>
+                    <li><a href="<%call siteUrl() %>default.aspx"><span>返回首页</span></a></li>
+                </ul>
+            </div>
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿#header,#footer{ 
+	width:auto;
+	margin:0;
+	padding:0;
+}
+#footer{ margin-top:5px;  background:url(../images/mall_footer_bg.png) repeat-x; }
+#footer hr{ border:1px solid #fff; }
+#function{ margin:0; }
+.f_left li{ float:left; }
+#header-box{
+	background:#BF0000;
+	height:105px;
+	margin:0;
+}
+#logo_serach{
+	width:1000px;
+	margin:0 auto;
+	padding:15px 0;
+}
+#mall_logo{
+	width:125px;
+	height:45px;
+	background:#fff;
+	float:left;
+}
+#mall_search{ float:right; margin-top:15px; }
+#mall_search form{ border:3px solid #990000; }
+#strSearch{
+	width:422px;
+	height:16px;
+	line-height:16px;
+	padding:4px 2px 4px 5px;
+}
+#subSearch{
+	width:94px;
+	height:24px;
+	margin-left:-5px;
+	text-indent:11111px;
+	background:url(../images/mall_search_bg.png) no-repeat;
+	cursor:pointer;
+	vertical-align:bottom;
+	overflow:hidden;
+}
+#mall_nav{ background:#1A1A1A; }
+#mall_nav ul{
+	display:block;
+	width:1000px;
+	margin:0 auto;
+}
+#mall_nav li{ display:block; line-height:30px; }
+#mall_nav ul .curChn{ margin-right:-2px; background:#9a0000; }
+#mall_nav li a{
+	position:relative;
+	padding:0 20px;
+	color:#fff;
+	border-left:1px solid #888;
+	z-index:1;
+}
+#mall_nav #selected{
+	font-weight:bold;
+	border-left:none;
+	background:#9a0000;
+	z-index:9999;
+}
+#selected:hover{ text-decoration:none; }
+.theMall{ margin-top:4px; _margin-top:0; }
+.mallTitle{
+	line-height:20px;
+	text-indent:5px;
+	border-bottom:1px solid #ddd;
+	border-left:2px solid #9a0000;
+	margin-bottom:5px;
+}
+.mallFloor,.mallGoods,.mallBrand{ float:left; }
+.mallFloor{ border:2px solid #ddd; border-top:none; }
+.mallFloor li{ width:170px; margin-bottom:5px; }
+.mallFloor li span{
+	display:block;
+	font-weight:bold;
+	text-indent:20px;
+	border-top:2px solid #333;
+	border-bottom:1px dashed #ddd;
+}
+.mallFloor li a{
+	display:block;
+	margin:0 auto;
+	padding:3px 0;
+	_padding-bottom:1px;
+	text-align:center;
+	overflow:hidden;
+}
+.mallGoods{ width:610px; }
+.mallGoods li{ margin:3px 6px; _margin:3px 4px; }
+.mallGoods li a{ display:block; border:2px solid #eee; }
+.mallGoods li a:hover{ border-color:#999; }
+.mallBrand{ width:216px; }
+.mallBrand li a{
+	display:block;
+	margin:3px 2px;
+	border:2px solid #eee;
+}
+.mallBrand li a:hover{ border-color:pink; }

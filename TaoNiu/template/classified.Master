@@ -1,0 +1,99 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="classified.master.vb" Inherits="TaoNiu.classified" %>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"/> 
+    <title>柳州免费发布信息 - 柳州桃牛网</title>
+    <meta name="Keywords"  content="柳州分类信息,柳州免费发布信息" /> 
+<meta name="Description" content="桃牛网 - 柳州分类信息，为你提供房产、车辆、求职、招聘、数码、交友、兼职、旅游、宠物等海量柳州分类信息，满足您不同的柳州免费发布信息需求。柳州桃牛网，最好的柳州分类信息网。" />
+    <%
+        Server.Execute("../server_page/header.aspx?place=classified")
+        %>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="function">
+        <div id="functionBox">
+            <p id="funLeft"><%Call getFunLeft()%></p>
+            <p id="funRight"><%Call getFunRight()%></p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="page">
+        <div id="header" class="newheader">
+            <div id="header-box" class="newheader-box">
+                <div id="logo_serach" class="afterClear">
+                    <div id="mall_logo" class="filed_left">
+                               <a href="../default.aspx"> iTaoNiu</a>
+                    </div>
+                    <div id="classified_search" class="filed_left">
+                        <form action="../classified/search.aspx" method="post" >
+                            
+                                <input id="strSearch" name="q" type="text"placeholder="输入要搜索的关键字" />
+                                <input id="subSearch" type="submit" value="搜索" />
+                            
+                        </form>
+                    </div>
+                    <div id="classified_newPost" class="filed_left">
+                        <a href="http://jiao.itaoniu.com/admin/post2.aspx">免费发布信息</a>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+             <ul class="fix afterClear classifiedUl">
+                <li class="disHome"><a  href="#" ><span>首页</span></a></li>
+	            <li class="disShop"><a href="#" title=""><span>桃牛商城</span></a></li>
+                <li class="select"><a href="index.aspx" title=""><span>哞哞叫</span></a><b class="rc-lt"></b><b class="rc-rt"></b></li>
+                <li class="disPing"><a href="#" title=""><span>社区平台</span></a></li>
+                <li class="disWei"><a href="#" title=""><span>桃牛微博</span></a></li>
+                <li class="disLuDang"><a href="#" title=""><span>桃牛论坛</span></a></li>
+                <li class="disHide"><a href="#" title=""><span>桃牛娱乐</span></a></li>
+            </ul>
+        </div>
+     
+        <div id="content">
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <script type="text/javascript">
+        //<![CDATA[
+           
+            cat.lingshi();
+         //]]>
+    </script>
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+
+            <hr />
+            <div id="linkList">
+                <a href="../about.aspx">关于桃牛</a>
+                <a href="#">营销中心</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">帮助中心</a>
+                <a href="../net.aspx">诚征英才</a>
+                <a href="../contactus.aspx">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">版权说明</a>
+                <a href="#">加入商城</a>
+                <a href="#">开放平台</a>
+                <a href="#">桃牛联盟</a>
+            </div>
+            <div id="cps">
+                <a id="wj" href="http://www.gx.cyberpolice.cn/liuzhou/index.asp?cityP=%C1%F8%D6%DD%CA%D0"></a>
+                <div id="cpTxt">
+                    <p>Copyright © 2010-2011 iTaoNiu.com 版权所有</p>
+                    <p>增值电信业务经营许可证：桂B2-20080224 </p>                
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,1393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E40A60BC-F6E8-4379-A3F3-ACA38C8BAC1A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TaoNiu</RootNamespace>
+    <AssemblyName>TaoNiu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TaoNiu.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="conStr-Deployment" Order="1" xmlns="">
+          <Destination Path="Data Source=116.252.185.172%3bInitial Catalog=TaoNiu%3bUser ID=inlost%3bPassword=68653611Icanfly8" />
+          <Object Type="dbFullSql" Enabled="True">
+            <PreSource Path="Data Source=116.252.185.172%3bInitial Catalog=TaoNiuDev%3bUser ID=dev_liyun%3bPassword=icanfly8" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\conStr-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <DeployIisAppPath>Default Web Site</DeployIisAppPath>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TaoNiu.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+    <DeployIisAppPath>Default Web Site</DeployIisAppPath>
+    <DeployEncryptKey>加密密码仅在任何部署设置标记为安全时使用</DeployEncryptKey>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Discuz.Toolkit, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Discuz.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="admin\admin_site.aspx" />
+    <Content Include="admin\advertisement.aspx" />
+    <Content Include="admin\announcement.aspx" />
+    <Content Include="admin\classified_cat.aspx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\feedback_add.aspx" />
+    <Content Include="admin\goods_add.aspx" />
+    <Content Include="admin\goods_categories.aspx" />
+    <Content Include="admin\goods_cat_firstShow.aspx" />
+    <Content Include="admin\goods_product.aspx" />
+    <Content Include="admin\goods_property.aspx" />
+    <Content Include="admin\goods_type.aspx" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\range.aspx" />
+    <Content Include="admin\server_page\main.aspx" />
+    <Content Include="admin\shop_add.aspx" />
+    <Content Include="admin\shop_certification.aspx" />
+    <Content Include="admin\shop_certification_type.aspx" />
+    <Content Include="admin\shop_domain.aspx" />
+    <Content Include="admin\shop_management.aspx" />
+    <Content Include="admin\trusteeship.aspx" />
+    <Content Include="admin\trusteeship_type.aspx" />
+    <Content Include="agent\default.aspx" />
+    <Content Include="agent\login.aspx" />
+    <Content Include="agent\server_page\shop_goods.aspx" />
+    <Content Include="agent\taskList.aspx" />
+    <Content Include="bin\aliPay.dll" />
+    <Content Include="bin\aliPay.pdb" />
+    <Content Include="bin\Discuz.Toolkit.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\TaoNiu.dll" />
+    <Content Include="bin\TaoNiu.pdb" />
+    <Content Include="bin\TaoNiu.xml" />
+    <Content Include="classified\cat.aspx" />
+    <Content Include="classified\default.aspx" />
+    <Content Include="classified\newPost.aspx" />
+    <Content Include="classified\post.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="images\topbar.png" />
+    <Content Include="net.aspx" />
+    <Content Include="cart.aspx" />
+    <Content Include="cartOrder.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\bg-deal.jpg" />
+    <Content Include="images\floor1.jpg" />
+    <Content Include="images\floor2.jpg" />
+    <Content Include="images\floor3.jpg" />
+    <Content Include="images\floor4.jpg" />
+    <Content Include="images\floor5.jpg" />
+    <Content Include="images\floor6.jpg" />
+    <Content Include="images\floor7.jpg" />
+    <Content Include="images\floor8.jpg" />
+    <Content Include="images\flow_steps_bg.png" />
+    <Content Include="images\fun.png" />
+    <Content Include="images\gwc.png" />
+    <Content Include="images\here.gif" />
+    <Content Include="images\indexDH.gif" />
+    <Content Include="images\jqzoom.gif" />
+    <Content Include="images\leftbar-bg.jpg" />
+    <Content Include="images\line.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo_white.gif" />
+    <Content Include="images\mall_footer_bg.png" />
+    <Content Include="images\mall_search_bg.png" />
+    <Content Include="images\msg_bg.png" />
+    <Content Include="images\nav.gif" />
+    <Content Include="images\nav.jpg" />
+    <Content Include="images\nav_black.png" />
+    <Content Include="images\nav_blue.png" />
+    <Content Include="images\nav_brown.png" />
+    <Content Include="images\nav_red.jpg" />
+    <Content Include="images\nav_xiao_red.jpg" />
+    <Content Include="images\new.png" />
+    <Content Include="images\now.png" />
+    <Content Include="images\pCenter.gif" />
+    <Content Include="images\publisher.png" />
+    <Content Include="images\pupop_bg.png" />
+    <Content Include="images\reg_bg.png" />
+    <Content Include="images\sale-bt-bg.png" />
+    <Content Include="images\searchbg.png" />
+    <Content Include="images\search_bg.png" />
+    <Content Include="images\shop.jpg" />
+    <Content Include="images\sidebar-bg.png" />
+    <Content Include="images\snsBtn.gif" />
+    <Content Include="images\stuff.png" />
+    <Content Include="images\t.gif" />
+    <Content Include="images\triangle.png" />
+    <Content Include="images\tuan_yuan.gif" />
+    <Content Include="images\tuan_yuan.png" />
+    <Content Include="images\user-center-head.jpg" />
+    <Content Include="images\wj.jpg" />
+    <Content Include="images\wj_gif.gif" />
+    <Content Include="images\yuan_btn.gif" />
+    <Content Include="inCat.aspx" />
+    <Content Include="include\editor\plugins\image\img_upload.aspx" />
+    <Content Include="include\editor\kindeditor-min.js" />
+    <Content Include="include\editor\kindeditor.js" />
+    <Content Include="include\editor\license.txt" />
+    <Content Include="include\editor\plugins\about.html" />
+    <Content Include="include\editor\plugins\advtable\advtable.html" />
+    <Content Include="include\editor\plugins\emoticons\0.gif" />
+    <Content Include="include\editor\plugins\emoticons\1.gif" />
+    <Content Include="include\editor\plugins\emoticons\10.gif" />
+    <Content Include="include\editor\plugins\emoticons\100.gif" />
+    <Content Include="include\editor\plugins\emoticons\101.gif" />
+    <Content Include="include\editor\plugins\emoticons\102.gif" />
+    <Content Include="include\editor\plugins\emoticons\103.gif" />
+    <Content Include="include\editor\plugins\emoticons\104.gif" />
+    <Content Include="include\editor\plugins\emoticons\105.gif" />
+    <Content Include="include\editor\plugins\emoticons\106.gif" />
+    <Content Include="include\editor\plugins\emoticons\107.gif" />
+    <Content Include="include\editor\plugins\emoticons\108.gif" />
+    <Content Include="include\editor\plugins\emoticons\109.gif" />
+    <Content Include="include\editor\plugins\emoticons\11.gif" />
+    <Content Include="include\editor\plugins\emoticons\110.gif" />
+    <Content Include="include\editor\plugins\emoticons\111.gif" />
+    <Content Include="include\editor\plugins\emoticons\112.gif" />
+    <Content Include="include\editor\plugins\emoticons\113.gif" />
+    <Content Include="include\editor\plugins\emoticons\114.gif" />
+    <Content Include="include\editor\plugins\emoticons\115.gif" />
+    <Content Include="include\editor\plugins\emoticons\116.gif" />
+    <Content Include="include\editor\plugins\emoticons\117.gif" />
+    <Content Include="include\editor\plugins\emoticons\118.gif" />
+    <Content Include="include\editor\plugins\emoticons\119.gif" />
+    <Content Include="include\editor\plugins\emoticons\12.gif" />
+    <Content Include="include\editor\plugins\emoticons\120.gif" />
+    <Content Include="include\editor\plugins\emoticons\121.gif" />
+    <Content Include="include\editor\plugins\emoticons\122.gif" />
+    <Content Include="include\editor\plugins\emoticons\123.gif" />
+    <Content Include="include\editor\plugins\emoticons\124.gif" />
+    <Content Include="include\editor\plugins\emoticons\125.gif" />
+    <Content Include="include\editor\plugins\emoticons\126.gif" />
+    <Content Include="include\editor\plugins\emoticons\127.gif" />
+    <Content Include="include\editor\plugins\emoticons\128.gif" />
+    <Content Include="include\editor\plugins\emoticons\129.gif" />
+    <Content Include="include\editor\plugins\emoticons\13.gif" />
+    <Content Include="include\editor\plugins\emoticons\130.gif" />
+    <Content Include="include\editor\plugins\emoticons\131.gif" />
+    <Content Include="include\editor\plugins\emoticons\132.gif" />
+    <Content Include="include\editor\plugins\emoticons\133.gif" />
+    <Content Include="include\editor\plugins\emoticons\134.gif" />
+    <Content Include="include\editor\plugins\emoticons\14.gif" />
+    <Content Include="include\editor\plugins\emoticons\15.gif" />
+    <Content Include="include\editor\plugins\emoticons\16.gif" />
+    <Content Include="include\editor\plugins\emoticons\17.gif" />
+    <Content Include="include\editor\plugins\emoticons\18.gif" />
+    <Content Include="include\editor\plugins\emoticons\19.gif" />
+    <Content Include="include\editor\plugins\emoticons\2.gif" />
+    <Content Include="include\editor\plugins\emoticons\20.gif" />
+    <Content Include="include\editor\plugins\emoticons\21.gif" />
+    <Content Include="include\editor\plugins\emoticons\22.gif" />
+    <Content Include="include\editor\plugins\emoticons\23.gif" />
+    <Content Include="include\editor\plugins\emoticons\24.gif" />
+    <Content Include="include\editor\plugins\emoticons\25.gif" />
+    <Content Include="include\editor\plugins\emoticons\26.gif" />
+    <Content Include="include\editor\plugins\emoticons\27.gif" />
+    <Content Include="include\editor\plugins\emoticons\28.gif" />
+    <Content Include="include\editor\plugins\emoticons\29.gif" />
+    <Content Include="include\editor\plugins\emoticons\3.gif" />
+    <Content Include="include\editor\plugins\emoticons\30.gif" />
+    <Content Include="include\editor\plugins\emoticons\31.gif" />
+    <Content Include="include\editor\plugins\emoticons\32.gif" />
+    <Content Include="include\editor\plugins\emoticons\33.gif" />
+    <Content Include="include\editor\plugins\emoticons\34.gif" />
+    <Content Include="include\editor\plugins\emoticons\35.gif" />
+    <Content Include="include\editor\plugins\emoticons\36.gif" />
+    <Content Include="include\editor\plugins\emoticons\37.gif" />
+    <Content Include="include\editor\plugins\emoticons\38.gif" />
+    <Content Include="include\editor\plugins\emoticons\39.gif" />
+    <Content Include="include\editor\plugins\emoticons\4.gif" />
+    <Content Include="include\editor\plugins\emoticons\40.gif" />
+    <Content Include="include\editor\plugins\emoticons\41.gif" />
+    <Content Include="include\editor\plugins\emoticons\42.gif" />
+    <Content Include="include\editor\plugins\emoticons\43.gif" />
+    <Content Include="include\editor\plugins\emoticons\44.gif" />
+    <Content Include="include\editor\plugins\emoticons\45.gif" />
+    <Content Include="include\editor\plugins\emoticons\46.gif" />
+    <Content Include="include\editor\plugins\emoticons\47.gif" />
+    <Content Include="include\editor\plugins\emoticons\48.gif" />
+    <Content Include="include\editor\plugins\emoticons\49.gif" />
+    <Content Include="include\editor\plugins\emoticons\5.gif" />
+    <Content Include="include\editor\plugins\emoticons\50.gif" />
+    <Content Include="include\editor\plugins\emoticons\51.gif" />
+    <Content Include="include\editor\plugins\emoticons\52.gif" />
+    <Content Include="include\editor\plugins\emoticons\53.gif" />
+    <Content Include="include\editor\plugins\emoticons\54.gif" />
+    <Content Include="include\editor\plugins\emoticons\55.gif" />
+    <Content Include="include\editor\plugins\emoticons\56.gif" />
+    <Content Include="include\editor\plugins\emoticons\57.gif" />
+    <Content Include="include\editor\plugins\emoticons\58.gif" />
+    <Content Include="include\editor\plugins\emoticons\59.gif" />
+    <Content Include="include\editor\plugins\emoticons\6.gif" />
+    <Content Include="include\editor\plugins\emoticons\60.gif" />
+    <Content Include="include\editor\plugins\emoticons\61.gif" />
+    <Content Include="include\editor\plugins\emoticons\62.gif" />
+    <Content Include="include\editor\plugins\emoticons\63.gif" />
+    <Content Include="include\editor\plugins\emoticons\64.gif" />
+    <Content Include="include\editor\plugins\emoticons\65.gif" />
+    <Content Include="include\editor\plugins\emoticons\66.gif" />
+    <Content Include="include\editor\plugins\emoticons\67.gif" />
+    <Content Include="include\editor\plugins\emoticons\68.gif" />
+    <Content Include="include\editor\plugins\emoticons\69.gif" />
+    <Content Include="include\editor\plugins\emoticons\7.gif" />
+    <Content Include="include\editor\plugins\emoticons\70.gif" />
+    <Content Include="include\editor\plugins\emoticons\71.gif" />
+    <Content Include="include\editor\plugins\emoticons\72.gif" />
+    <Content Include="include\editor\plugins\emoticons\73.gif" />
+    <Content Include="include\editor\plugins\emoticons\74.gif" />
+    <Content Include="include\editor\plugins\emoticons\75.gif" />
+    <Content Include="include\editor\plugins\emoticons\76.gif" />
+    <Content Include="include\editor\plugins\emoticons\77.gif" />
+    <Content Include="include\editor\plugins\emoticons\78.gif" />
+    <Content Include="include\editor\plugins\emoticons\79.gif" />
+    <Content Include="include\editor\plugins\emoticons\8.gif" />
+    <Content Include="include\editor\plugins\emoticons\80.gif" />
+    <Content Include="include\editor\plugins\emoticons\81.gif" />
+    <Content Include="include\editor\plugins\emoticons\82.gif" />
+    <Content Include="include\editor\plugins\emoticons\83.gif" />
+    <Content Include="include\editor\plugins\emoticons\84.gif" />
+    <Content Include="include\editor\plugins\emoticons\85.gif" />
+    <Content Include="include\editor\plugins\emoticons\86.gif" />
+    <Content Include="include\editor\plugins\emoticons\87.gif" />
+    <Content Include="include\editor\plugins\emoticons\88.gif" />
+    <Content Include="include\editor\plugins\emoticons\89.gif" />
+    <Content Include="include\editor\plugins\emoticons\9.gif" />
+    <Content Include="include\editor\plugins\emoticons\90.gif" />
+    <Content Include="include\editor\plugins\emoticons\91.gif" />
+    <Content Include="include\editor\plugins\emoticons\92.gif" />
+    <Content Include="include\editor\plugins\emoticons\93.gif" />
+    <Content Include="include\editor\plugins\emoticons\94.gif" />
+    <Content Include="include\editor\plugins\emoticons\95.gif" />
+    <Content Include="include\editor\plugins\emoticons\96.gif" />
+    <Content Include="include\editor\plugins\emoticons\97.gif" />
+    <Content Include="include\editor\plugins\emoticons\98.gif" />
+    <Content Include="include\editor\plugins\emoticons\99.gif" />
+    <Content Include="include\editor\plugins\emoticons\qq.gif" />
+    <Content Include="include\editor\plugins\flash.html" />
+    <Content Include="include\editor\plugins\image\image.html" />
+    <Content Include="include\editor\plugins\image\images\align_left.gif" />
+    <Content Include="include\editor\plugins\image\images\align_right.gif" />
+    <Content Include="include\editor\plugins\image\images\align_top.gif" />
+    <Content Include="include\editor\plugins\image\images\refresh.gif" />
+    <Content Include="include\editor\plugins\link\link.html" />
+    <Content Include="include\editor\plugins\media.html" />
+    <Content Include="include\editor\plugins\plainpaste.html" />
+    <Content Include="include\editor\plugins\wordpaste.html" />
+    <Content Include="include\editor\skins\common\blank.gif" />
+    <Content Include="include\editor\skins\common\editor.css" />
+    <Content Include="include\editor\skins\common\flash.gif" />
+    <Content Include="include\editor\skins\common\loading.gif" />
+    <Content Include="include\editor\skins\common\media.gif" />
+    <Content Include="include\editor\skins\common\rm.gif" />
+    <Content Include="include\editor\skins\default.css" />
+    <Content Include="include\editor\skins\default\default.gif" />
+    <Content Include="login.aspx" />
+    <Content Include="mall\default.aspx" />
+    <Content Include="mall\index.aspx" />
+    <Content Include="mall\mall_ad.aspx" />
+    <Content Include="mall\mall_admin.aspx" />
+    <Content Include="mall\mall_report.aspx" />
+    <Content Include="mall\mall_setings.aspx" />
+    <Content Include="mall\mall_shops.aspx" />
+    <Content Include="mall\reg.aspx" />
+    <Content Include="mall\search.aspx" />
+    <Content Include="mall\servicePage\main_actions.aspx" />
+    <Content Include="My Project\triangle.png" />
+    <Content Include="obj\Debug\TaoNiu.vbproj.FileListAbsolute.txt" />
+    <Content Include="paySystem\notify.aspx" />
+    <Content Include="paySystem\notify_money.aspx" />
+    <Content Include="paySystem\orderRedirect.aspx" />
+    <Content Include="paySystem\payTo.aspx" />
+    <Content Include="paySystem\return.aspx" />
+    <Content Include="paySystem\return_money.aspx" />
+    <Content Include="personalCenter\default.aspx" />
+    <Content Include="personalCenter\login.aspx" />
+    <Content Include="personalCenter\new_img.aspx" />
+    <Content Include="personalCenter\new_link.aspx" />
+    <Content Include="personalCenter\new_music.aspx" />
+    <Content Include="personalCenter\new_text.aspx" />
+    <Content Include="personalCenter\new_video.aspx" />
+    <Content Include="reg.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.jqzoom.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\mall.js" />
+    <Content Include="search.aspx" />
+    <Content Include="server_page\alive.aspx" />
+    <Content Include="server_page\bbs_call.aspx" />
+    <Content Include="server_page\bbs_CallBack.aspx" />
+    <Content Include="server_page\buy.aspx" />
+    <Content Include="server_page\cart.aspx" />
+    <Content Include="server_page\classified.aspx" />
+    <Content Include="server_page\favorites.aspx" />
+    <Content Include="server_page\functions.aspx" />
+    <Content Include="server_page\header.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="server_page\lianMeng.aspx" />
+    <Content Include="server_page\money.aspx" />
+    <Content Include="server_page\order.aspx" />
+    <Content Include="server_page\sale_fun.aspx" />
+    <Content Include="server_page\shop_goods.aspx" />
+    <Content Include="server_page\uCenter_pc.aspx" />
+    <Content Include="server_page\user_service.aspx" />
+    <Content Include="server_page\vdImg.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="shopProduct.aspx" />
+    <Content Include="shop\skins\default\style.css" />
+    <Content Include="style\admin.css" />
+    <Content Include="style\agent.css" />
+    <Content Include="style\bring.css" />
+    <Content Include="style\classified.css" />
+    <Content Include="style\main.css" />
+    <Content Include="style\mall.css" />
+    <Content Include="style\tuan.css" />
+    <Content Include="style\user_center.css" />
+    <Content Include="taskList\前段tasklist.txt" />
+    <Content Include="tuan.aspx" />
+    <Content Include="user_center.aspx" />
+    <Content Include="user_center_fav.aspx" />
+    <Content Include="user_center_Goods.aspx" />
+    <Content Include="user_center_lianMeng.aspx" />
+    <Content Include="user_center_lm.aspx" />
+    <Content Include="user_center_lm_list.aspx" />
+    <Content Include="user_center_lm_search.aspx" />
+    <Content Include="user_center_money.aspx" />
+    <Content Include="user_center_money_log.aspx" />
+    <Content Include="user_center_myOrders.aspx" />
+    <Content Include="user_center_Myshop.aspx" />
+    <Content Include="user_center_newShop.aspx" />
+    <Content Include="user_center_orders.aspx" />
+    <Content Include="user_center_sale_pf.aspx" />
+    <Content Include="user_center_sale_tg.aspx" />
+    <Content Include="user_center_sale_zq.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.designer.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_site.aspx.designer.vb">
+      <DependentUpon>admin_site.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_site.aspx.vb">
+      <DependentUpon>admin_site.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\advertisement.aspx.designer.vb">
+      <DependentUpon>advertisement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\advertisement.aspx.vb">
+      <DependentUpon>advertisement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\announcement.aspx.designer.vb">
+      <DependentUpon>announcement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\announcement.aspx.vb">
+      <DependentUpon>announcement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\classified_cat.aspx.designer.vb">
+      <DependentUpon>classified_cat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\classified_cat.aspx.vb">
+      <DependentUpon>classified_cat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\feedback_add.aspx.designer.vb">
+      <DependentUpon>feedback_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\feedback_add.aspx.vb">
+      <DependentUpon>feedback_add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_add.aspx.designer.vb">
+      <DependentUpon>goods_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_add.aspx.vb">
+      <DependentUpon>goods_add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_categories.aspx.designer.vb">
+      <DependentUpon>goods_categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_categories.aspx.vb">
+      <DependentUpon>goods_categories.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_cat_firstShow.aspx.designer.vb">
+      <DependentUpon>goods_cat_firstShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_cat_firstShow.aspx.vb">
+      <DependentUpon>goods_cat_firstShow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_product.aspx.designer.vb">
+      <DependentUpon>goods_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_product.aspx.vb">
+      <DependentUpon>goods_product.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_property.aspx.designer.vb">
+      <DependentUpon>goods_property.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_property.aspx.vb">
+      <DependentUpon>goods_property.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\goods_type.aspx.designer.vb">
+      <DependentUpon>goods_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\goods_type.aspx.vb">
+      <DependentUpon>goods_type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\range.aspx.designer.vb">
+      <DependentUpon>range.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\range.aspx.vb">
+      <DependentUpon>range.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\server_page\main.aspx.designer.vb">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\server_page\main.aspx.vb">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\shop_add.aspx.designer.vb">
+      <DependentUpon>shop_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shop_add.aspx.vb">
+      <DependentUpon>shop_add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\shop_certification.aspx.designer.vb">
+      <DependentUpon>shop_certification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shop_certification.aspx.vb">
+      <DependentUpon>shop_certification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\shop_certification_type.aspx.designer.vb">
+      <DependentUpon>shop_certification_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shop_certification_type.aspx.vb">
+      <DependentUpon>shop_certification_type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\shop_domain.aspx.designer.vb">
+      <DependentUpon>shop_domain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shop_domain.aspx.vb">
+      <DependentUpon>shop_domain.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\shop_management.aspx.designer.vb">
+      <DependentUpon>shop_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shop_management.aspx.vb">
+      <DependentUpon>shop_management.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\trusteeship.aspx.designer.vb">
+      <DependentUpon>trusteeship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trusteeship.aspx.vb">
+      <DependentUpon>trusteeship.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\trusteeship_type.aspx.designer.vb">
+      <DependentUpon>trusteeship_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trusteeship_type.aspx.vb">
+      <DependentUpon>trusteeship_type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="agent\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agent\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="agent\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agent\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="agent\server_page\shop_goods.aspx.designer.vb">
+      <DependentUpon>shop_goods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agent\server_page\shop_goods.aspx.vb">
+      <DependentUpon>shop_goods.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="agent\taskList.aspx.designer.vb">
+      <DependentUpon>taskList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agent\taskList.aspx.vb">
+      <DependentUpon>taskList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="classified\cat.aspx.designer.vb">
+      <DependentUpon>cat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classified\cat.aspx.vb">
+      <DependentUpon>cat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="classified\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classified\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="classified\newPost.aspx.designer.vb">
+      <DependentUpon>newPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classified\newPost.aspx.vb">
+      <DependentUpon>newPost.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="classified\post.aspx.designer.vb">
+      <DependentUpon>post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classified\post.aspx.vb">
+      <DependentUpon>post.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="class\classifieds.vb" />
+    <Compile Include="contactus.aspx.designer.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="net.aspx.designer.vb">
+      <DependentUpon>net.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="net.aspx.vb">
+      <DependentUpon>net.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cartOrder.aspx.designer.vb">
+      <DependentUpon>cartOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cartOrder.aspx.vb">
+      <DependentUpon>cartOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="class\Ad.vb" />
+    <Compile Include="class\adm.vb" />
+    <Compile Include="class\cart.vb" />
+    <Compile Include="class\DiscuzSessionHelper.vb" />
+    <Compile Include="class\dbHelper.vb" />
+    <Compile Include="class\favorites.vb" />
+    <Compile Include="class\goods.vb" />
+    <Compile Include="class\images.vb" />
+    <Compile Include="class\mail.vb" />
+    <Compile Include="class\main.vb" />
+    <Compile Include="class\order.vb" />
+    <Compile Include="class\pageLink.vb" />
+    <Compile Include="class\pCenter.vb" />
+    <Compile Include="class\sale_fun.vb" />
+    <Compile Include="class\searchHelper.vb" />
+    <Compile Include="class\shop.vb" />
+    <Compile Include="class\trusteeship.vb" />
+    <Compile Include="class\typeHelper.vb" />
+    <Compile Include="class\user.vb" />
+    <Compile Include="class\vdImg.vb" />
+    <Compile Include="class\video.vb" />
+    <Compile Include="class\weituo.vb" />
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="inCat.aspx.designer.vb">
+      <DependentUpon>inCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inCat.aspx.vb">
+      <DependentUpon>inCat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="include\editor\plugins\image\img_upload.aspx.designer.vb">
+      <DependentUpon>img_upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="include\editor\plugins\image\img_upload.aspx.vb">
+      <DependentUpon>img_upload.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\mall_ad.aspx.designer.vb">
+      <DependentUpon>mall_ad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\mall_ad.aspx.vb">
+      <DependentUpon>mall_ad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\mall_admin.aspx.designer.vb">
+      <DependentUpon>mall_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\mall_admin.aspx.vb">
+      <DependentUpon>mall_admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\mall_report.aspx.designer.vb">
+      <DependentUpon>mall_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\mall_report.aspx.vb">
+      <DependentUpon>mall_report.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\mall_setings.aspx.designer.vb">
+      <DependentUpon>mall_setings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\mall_setings.aspx.vb">
+      <DependentUpon>mall_setings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\mall_shops.aspx.designer.vb">
+      <DependentUpon>mall_shops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\mall_shops.aspx.vb">
+      <DependentUpon>mall_shops.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\reg.aspx.designer.vb">
+      <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\reg.aspx.vb">
+      <DependentUpon>reg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\search.aspx.designer.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mall\servicePage\main_actions.aspx.designer.vb">
+      <DependentUpon>main_actions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mall\servicePage\main_actions.aspx.vb">
+      <DependentUpon>main_actions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="paySystem\alipay_config.vb" />
+    <Compile Include="paySystem\alipay_function.vb" />
+    <Compile Include="paySystem\alipay_notify.vb" />
+    <Compile Include="paySystem\alipay_service.vb" />
+    <Compile Include="paySystem\money.vb" />
+    <Compile Include="paySystem\notify.aspx.designer.vb">
+      <DependentUpon>notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\notify.aspx.vb">
+      <DependentUpon>notify.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paySystem\notify_money.aspx.designer.vb">
+      <DependentUpon>notify_money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\notify_money.aspx.vb">
+      <DependentUpon>notify_money.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paySystem\orders.vb" />
+    <Compile Include="paySystem\orderRedirect.aspx.designer.vb">
+      <DependentUpon>orderRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\orderRedirect.aspx.vb">
+      <DependentUpon>orderRedirect.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paySystem\payTo.aspx.designer.vb">
+      <DependentUpon>payTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\payTo.aspx.vb">
+      <DependentUpon>payTo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paySystem\return.aspx.designer.vb">
+      <DependentUpon>return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\return.aspx.vb">
+      <DependentUpon>return.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paySystem\return_money.aspx.designer.vb">
+      <DependentUpon>return_money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paySystem\return_money.aspx.vb">
+      <DependentUpon>return_money.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\new_img.aspx.designer.vb">
+      <DependentUpon>new_img.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\new_img.aspx.vb">
+      <DependentUpon>new_img.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\new_link.aspx.designer.vb">
+      <DependentUpon>new_link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\new_link.aspx.vb">
+      <DependentUpon>new_link.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\new_music.aspx.designer.vb">
+      <DependentUpon>new_music.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\new_music.aspx.vb">
+      <DependentUpon>new_music.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\new_text.aspx.designer.vb">
+      <DependentUpon>new_text.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\new_text.aspx.vb">
+      <DependentUpon>new_text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="personalCenter\new_video.aspx.designer.vb">
+      <DependentUpon>new_video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personalCenter\new_video.aspx.vb">
+      <DependentUpon>new_video.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reg.aspx.designer.vb">
+      <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reg.aspx.vb">
+      <DependentUpon>reg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\alive.aspx.designer.vb">
+      <DependentUpon>alive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\alive.aspx.vb">
+      <DependentUpon>alive.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\bbs_call.aspx.designer.vb">
+      <DependentUpon>bbs_call.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\bbs_call.aspx.vb">
+      <DependentUpon>bbs_call.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\bbs_CallBack.aspx.designer.vb">
+      <DependentUpon>bbs_CallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\bbs_CallBack.aspx.vb">
+      <DependentUpon>bbs_CallBack.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\buy.aspx.designer.vb">
+      <DependentUpon>buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\buy.aspx.vb">
+      <DependentUpon>buy.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\cart.aspx.designer.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\cart.aspx.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\classified.aspx.designer.vb">
+      <DependentUpon>classified.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\classified.aspx.vb">
+      <DependentUpon>classified.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\favorites.aspx.designer.vb">
+      <DependentUpon>favorites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\favorites.aspx.vb">
+      <DependentUpon>favorites.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\functions.aspx.designer.vb">
+      <DependentUpon>functions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\functions.aspx.vb">
+      <DependentUpon>functions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\header.aspx.designer.vb">
+      <DependentUpon>header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\header.aspx.vb">
+      <DependentUpon>header.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.vb">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.vb">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\lianMeng.aspx.designer.vb">
+      <DependentUpon>lianMeng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\lianMeng.aspx.vb">
+      <DependentUpon>lianMeng.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\money.aspx.designer.vb">
+      <DependentUpon>money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\money.aspx.vb">
+      <DependentUpon>money.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\order.aspx.designer.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\order.aspx.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\sale_fun.aspx.designer.vb">
+      <DependentUpon>sale_fun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\sale_fun.aspx.vb">
+      <DependentUpon>sale_fun.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\shop_goods.aspx.designer.vb">
+      <DependentUpon>shop_goods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\shop_goods.aspx.vb">
+      <DependentUpon>shop_goods.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\uCenter_pc.aspx.designer.vb">
+      <DependentUpon>uCenter_pc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\uCenter_pc.aspx.vb">
+      <DependentUpon>uCenter_pc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="server_page\user_service.aspx.designer.vb">
+      <DependentUpon>user_service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\user_service.aspx.vb">
+      <DependentUpon>user_service.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="server_page\vdImg.aspx.designer.vb">
+      <DependentUpon>vdImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="server_page\vdImg.aspx.vb">
+      <DependentUpon>vdImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.vb">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.vb">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="shopProduct.aspx.designer.vb">
+      <DependentUpon>shopProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopProduct.aspx.vb">
+      <DependentUpon>shopProduct.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="template\admin_main.Master.designer.vb">
+      <DependentUpon>admin_main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\admin_main.Master.vb">
+      <DependentUpon>admin_main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\agent.Master.designer.vb">
+      <DependentUpon>agent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\agent.Master.vb">
+      <DependentUpon>agent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\classified.Master.designer.vb">
+      <DependentUpon>classified.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\classified.Master.vb">
+      <DependentUpon>classified.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\mall.Master.designer.vb">
+      <DependentUpon>mall.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\mall.Master.vb">
+      <DependentUpon>mall.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\mall_front.Master.designer.vb">
+      <DependentUpon>mall_front.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\mall_front.Master.vb">
+      <DependentUpon>mall_front.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\site_front.Master.designer.vb">
+      <DependentUpon>site_front.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\site_front.Master.vb">
+      <DependentUpon>site_front.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\site_front_withSearch.master.designer.vb">
+      <DependentUpon>site_front_withSearch.master</DependentUpon>
+    </Compile>
+    <Compile Include="template\site_front_withSearch.master.vb">
+      <DependentUpon>site_front_withSearch.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\user_center.Master.designer.vb">
+      <DependentUpon>user_center.Master</DependentUpon>
+    </Compile>
+    <Compile Include="template\user_center.Master.vb">
+      <DependentUpon>user_center.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template\user_center_pc.master.designer.vb">
+      <DependentUpon>user_center_pc.master</DependentUpon>
+    </Compile>
+    <Compile Include="template\user_center_pc.master.vb">
+      <DependentUpon>user_center_pc.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tuan.aspx.designer.vb">
+      <DependentUpon>tuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tuan.aspx.vb">
+      <DependentUpon>tuan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center.aspx.designer.vb">
+      <DependentUpon>user_center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center.aspx.vb">
+      <DependentUpon>user_center.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_fav.aspx.designer.vb">
+      <DependentUpon>user_center_fav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_fav.aspx.vb">
+      <DependentUpon>user_center_fav.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_Goods.aspx.designer.vb">
+      <DependentUpon>user_center_Goods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_Goods.aspx.vb">
+      <DependentUpon>user_center_Goods.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_lianMeng.aspx.designer.vb">
+      <DependentUpon>user_center_lianMeng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_lianMeng.aspx.vb">
+      <DependentUpon>user_center_lianMeng.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_lm.aspx.designer.vb">
+      <DependentUpon>user_center_lm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_lm.aspx.vb">
+      <DependentUpon>user_center_lm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_lm_list.aspx.designer.vb">
+      <DependentUpon>user_center_lm_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_lm_list.aspx.vb">
+      <DependentUpon>user_center_lm_list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_lm_search.aspx.designer.vb">
+      <DependentUpon>user_center_lm_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_lm_search.aspx.vb">
+      <DependentUpon>user_center_lm_search.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_money.aspx.designer.vb">
+      <DependentUpon>user_center_money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_money.aspx.vb">
+      <DependentUpon>user_center_money.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_money_log.aspx.designer.vb">
+      <DependentUpon>user_center_money_log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_money_log.aspx.vb">
+      <DependentUpon>user_center_money_log.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_myOrders.aspx.designer.vb">
+      <DependentUpon>user_center_myOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_myOrders.aspx.vb">
+      <DependentUpon>user_center_myOrders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_Myshop.aspx.designer.vb">
+      <DependentUpon>user_center_Myshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_Myshop.aspx.vb">
+      <DependentUpon>user_center_Myshop.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_newShop.aspx.designer.vb">
+      <DependentUpon>user_center_newShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_newShop.aspx.vb">
+      <DependentUpon>user_center_newShop.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_orders.aspx.designer.vb">
+      <DependentUpon>user_center_orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_orders.aspx.vb">
+      <DependentUpon>user_center_orders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_sale.aspx.designer.vb">
+      <DependentUpon>user_center_sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_sale.aspx.vb">
+      <DependentUpon>user_center_sale.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_sale_jf.aspx.designer.vb">
+      <DependentUpon>user_center_sale_jf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_sale_jf.aspx.vb">
+      <DependentUpon>user_center_sale_jf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_sale_pf.aspx.designer.vb">
+      <DependentUpon>user_center_sale_pf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_sale_pf.aspx.vb">
+      <DependentUpon>user_center_sale_pf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_sale_tg.aspx.designer.vb">
+      <DependentUpon>user_center_sale_tg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_sale_tg.aspx.vb">
+      <DependentUpon>user_center_sale_tg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_sale_zq.aspx.designer.vb">
+      <DependentUpon>user_center_sale_zq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_sale_zq.aspx.vb">
+      <DependentUpon>user_center_sale_zq.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_tools.aspx.designer.vb">
+      <DependentUpon>user_center_tools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_tools.aspx.vb">
+      <DependentUpon>user_center_tools.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_tools_certification.aspx.designer.vb">
+      <DependentUpon>user_center_tools_certification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_tools_certification.aspx.vb">
+      <DependentUpon>user_center_tools_certification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_tools_trusteeship.aspx.designer.vb">
+      <DependentUpon>user_center_tools_trusteeship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_tools_trusteeship.aspx.vb">
+      <DependentUpon>user_center_tools_trusteeship.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="user_center_tools_type.aspx.designer.vb">
+      <DependentUpon>user_center_tools_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_center_tools_type.aspx.vb">
+      <DependentUpon>user_center_tools_type.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\TaoNiu.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="template\site_front.Master" />
+    <Content Include="template\admin_main.Master" />
+    <Content Include="template\user_center.Master" />
+    <Content Include="template\site_front_withSearch.master" />
+    <Content Include="template\user_center_pc.master" />
+    <Content Include="user_center_sale.aspx" />
+    <Content Include="user_center_sale_jf.aspx" />
+    <Content Include="user_center_tools.aspx" />
+    <Content Include="user_center_tools_certification.aspx" />
+    <Content Include="user_center_tools_trusteeship.aspx" />
+    <Content Include="user_center_tools_type.aspx" />
+    <Content Include="template\agent.Master" />
+    <Content Include="template\mall.Master" />
+    <Content Include="template\mall_front.Master" />
+    <Content Include="template\classified.Master" />
+    <Content Include="web.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\Debug\GenerateResource.write.1.tlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\images\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1443</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

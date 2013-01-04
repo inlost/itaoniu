@@ -1,0 +1,79 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="site_front.Master.vb" Inherits="TaoNiu.Site_front" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head runat="server">
+	<meta charset="gbk"> 
+    <title>桃牛网  - 我选择我喜欢！</title>
+  <meta name="description" content="桃牛网(www.itaoniu.com) - 网上交易平台，为您提供男女服装、美容、家居、家电等各类优质特价商品，让你全面安心享受网上购物乐趣！ " />
+   
+ <meta name="Keywords" content="桃牛网,网上购物,网上商城,特价商品,新店开张,免费商品,赠券,甩卖,秒杀,团购,批发,桃牛商城" /> 
+  <!--[if IE]>
+
+    <meta name="application-name" content="桃牛网：购物更放心" />
+    <meta name="msapplication-tooltip" content="桃牛网：购物更放心" />
+
+    <![endif]-->
+
+    <%
+        Try
+            Server.Execute("server_page/header.aspx?place=home")
+        Catch ex As Exception
+            Server.Execute("../server_page/header.aspx?place=mall")
+        End Try
+        %>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="function">
+        <div id="functionBox">
+            <p id="funLeft"><%Call getFunLeft()%></p>
+            <p id="funRight"><%Call getFunRight()%></p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="header-box">
+                <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="content">
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+            <hr />
+            <div id="linkList">
+                <a href="../about.aspx">关于桃牛</a>
+                <a href="#">营销中心</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">帮助中心</a>
+                <a href="../net.aspx">诚征英才</a>
+                <a href="../contactus.aspx">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">版权说明</a>
+                <a href="#">加入商城</a>
+                <a href="#">开放平台</a>
+                <a href="#">桃牛联盟</a>
+            </div>
+            <div id="cps">
+                <a id="wj" href="http://www.gx.cyberpolice.cn/liuzhou/index.asp?cityP=%C1%F8%D6%DD%CA%D0"></a>
+                <div id="cpTxt">
+                    <p>Copyright © 2010-2011 iTaoNiu.com 版权所有</p>
+                    <p>增值电信业务经营许可证：桂B2-20080224 </p>                
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

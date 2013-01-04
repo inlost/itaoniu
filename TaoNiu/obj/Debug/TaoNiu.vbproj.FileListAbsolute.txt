@@ -1,0 +1,10 @@
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\TaoNiu.Resources.resources
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\bin\TaoNiu.dll
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\bin\TaoNiu.pdb
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\bin\TaoNiu.xml
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\TaoNiu.dll
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\TaoNiu.xml
+C:\Documents and Settings\Administrator\桌面\新建文件夹\TaoNiu\TaoNiu\obj\Debug\TaoNiu.pdb

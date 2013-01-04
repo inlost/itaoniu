@@ -1,0 +1,82 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin_main.Master.vb" Inherits="TaoNiu.admin" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"> 
+    <title></title>
+    <%Server.Execute("../server_page/header.aspx?place=admin")%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+        <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="content">
+            <div id="leftBar">
+                <ul>
+                    <li class="header1">
+                        <h1>全局设置</h1>
+                        <ul>
+                            <li><a href="../admin/default.aspx">首页</a></li>
+                            <li><a href="../admin/admin_site.aspx">站点信息</a></li>
+                            <li><a href="../admin/goods_cat_firstShow.aspx">活动管理</a></li>
+                            <li><a href="../admin/announcement.aspx">公告管理</a></li>
+                            <li><a href="../admin/advertisement.aspx">广告管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="header1">
+                        <h1>商品管理</h1>
+                        <ul>
+                            <li><a href="../admin/goods_categories.aspx">商品分类</a></li>
+                            <li><a href="../admin/goods_property.aspx">分类属性</a></li>
+                            <li><a href="../admin/range.aspx">送货范围管理</a></li>
+                            <li><a href="../admin/goods_add.aspx">商品添加</a></li>
+                            <li><a href="../admin/goods_product.aspx">商品管理</a></li>
+                            <li><a href="../admin/goods_add.aspx">商品添加</a></li>
+                        </ul>
+                    </li>
+                    <li class="header1">
+                        <h1>店铺管理</h1>
+                        <ul>
+                            <li><a href="../admin/shop_management.aspx">店铺管理</a></li>
+                            <li><a href="../admin/shop_add.aspx">店铺添加</a></li>
+                            <li><a href="../admin/shop_certification_type.aspx">认证类型</a></li>
+                            <li><a href="../admin/shop_certification.aspx">店铺认证</a></li>
+                            <li><a href="../admin/shop_domain.aspx">店铺域名</a></li>
+                        </ul>
+                    </li>
+                    <li class="header1">
+                        <h1>托管管理</h1>
+                        <ul>
+                            <li><a href="../admin/trusteeship.aspx">托管人员管理</a></li>
+                            <li><a href="../admin/trusteeship_type.aspx">托管类型管理</a></li>
+                        </ul>
+                    </li>classified_cat.aspx
+                    <li class="header1">
+                        <h1>分类信息</h1>
+                        <ul>
+                            <li><a href="../admin/classified_cat.aspx">分类信息分类</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+        
+            </asp:ContentPlaceHolder>  
+            <div class="clear"></div>      
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+    </div>
+</body>
+</html>

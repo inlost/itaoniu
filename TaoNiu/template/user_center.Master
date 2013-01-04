@@ -1,0 +1,58 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="user_center.master.vb" Inherits="TaoNiu.user_center" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"> 
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%
+        Try
+            Server.Execute("server_page/header.aspx?place=center")
+        Catch ex As Exception
+            Server.Execute("../server_page/header.aspx?place=pCenter")
+        End Try
+        %>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+        <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="content">
+            <div id="sidebar">
+                <ul id="main_list">
+                    <li><a <% Call setId("我的信息")%>  href="<%call siteUrl() %>user_center.aspx"><span><%Response.Write(Session("niceName"))%>的信息</span></a></li>
+                    <li><a <% Call setId("我的社区")%> href="<%call siteUrl() %>personalCenter/default.aspx?at=pc"><span>我的社区</span></a></li>
+                    <li><a <% Call setId("我的订单")%> href="<%call siteUrl() %>user_center_orders.aspx?at=orders"><span>我的订单</span></a></li>
+                    <li><a <% Call setId("我的收藏")%> href="<%call siteUrl() %>user_center_fav.aspx?at=fav"><span>我的收藏</span></a></li>
+                    <li><a <% Call setId("我要开店")%> href="<%call siteUrl() %>user_center_newShop.aspx?at=newShop"><span>我要开店</span></a></li>
+                    <%If hasShop() Then%>
+                    <li><a <% Call setId("资金管理")%> href="<%call siteUrl() %>user_center_money.aspx?at=money"><span>资金管理</span></a></li>
+                    <li><a <% Call setId("我的店铺")%> href="<%call siteUrl() %>user_center_myShop.aspx?at=myShop"><span>我的店铺</span></a></li>
+                    <li><a <% Call setId("店铺商品")%> href="<%call siteUrl() %>user_center_goods.aspx?at=goods"><span>店铺商品</span></a></li>
+                    <li><a <% Call setId("营销平台")%> href="<%call siteUrl() %>user_center_sale.aspx?at=sale"><span>营销平台</span></a></li>
+                    <li><a <% Call setId("店铺工具")%> href="<%call siteUrl() %>user_center_tools.aspx?at=tools"><span>店铺工具</span></a></li>
+                    <li><a <% Call setId("店铺订单")%> href="<%call siteUrl() %>user_center_myOrders.aspx?at=myorders"><span>店铺订单</span></a></li>
+                    <% Else%>
+                    <%End If%>
+                    <li><a href="<%call siteUrl() %>default.aspx"><span>返回首页</span></a></li>
+                </ul>
+            </div>
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+    </div>
+</body>
+</html>

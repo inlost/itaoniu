@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TaoNiu", "TaoNiu\TaoNiu.vbproj", "{E40A60BC-F6E8-4379-A3F3-ACA38C8BAC1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taoniu.c", "taoniu.c\taoniu.c.csproj", "{F75DD760-B3AC-458F-9D6F-43B6ECCD2792}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40A60BC-F6E8-4379-A3F3-ACA38C8BAC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40A60BC-F6E8-4379-A3F3-ACA38C8BAC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40A60BC-F6E8-4379-A3F3-ACA38C8BAC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75DD760-B3AC-458F-9D6F-43B6ECCD2792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75DD760-B3AC-458F-9D6F-43B6ECCD2792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75DD760-B3AC-458F-9D6F-43B6ECCD2792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75DD760-B3AC-458F-9D6F-43B6ECCD2792}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

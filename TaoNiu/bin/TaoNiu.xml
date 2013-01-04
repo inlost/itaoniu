@@ -1,0 +1,3035 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TaoNiu
+</name>
+</assembly>
+<members>
+<member name="P:TaoNiu.My.MyWebExtension.Computer">
+	<summary>
+ 返回有关主机计算机的信息。
+ </summary>
+</member><member name="P:TaoNiu.My.MyWebExtension.User">
+	<summary>
+ 返回有关当前 Web 用户的信息。
+ </summary>
+</member><member name="P:TaoNiu.My.MyWebExtension.Request">
+	<summary>
+ 返回 Request 对象。
+ </summary>
+</member><member name="P:TaoNiu.My.MyWebExtension.Response">
+	<summary>
+ 返回 Response 对象。
+ </summary>
+</member><member name="P:TaoNiu.My.MyWebExtension.Log">
+	<summary>
+ 返回 Asp 日志对象。
+ </summary>
+</member><member name="T:TaoNiu.My.MyWebExtension">
+	<summary>
+ 用于定义“My Web 命名空间”项目中的可用属性的模块。
+ </summary>
+	<remarks></remarks>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Partner">
+	<summary>
+ 获取或设置合作者身份ID
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Key">
+	<summary>
+ 获取或设置交易安全检验码
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Seller_email">
+	<summary>
+ 获取或设置签约支付宝账号或卖家支付宝帐户
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Return_url">
+	<summary>
+ 获取或设置付完款后跳转的页面路径
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Notify_url">
+	<summary>
+ 获取或设置服务器异步通知页面路径
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Input_charset">
+	<summary>
+ 获取或设置字符编码格式
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Sign_type">
+	<summary>
+ 获取或设置签名方式
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Transport">
+	<summary>
+ 获取或设置访问模式
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Show_url">
+	<summary>
+ 获取或设置网站商品的展示地址
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayConfig.Mainname">
+	<summary>
+ 获取或设置收款方名称
+ </summary>
+</member><member name="F:TaoNiu.mall_front.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall_front.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall_front.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall_front.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall_front.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_name">
+	<summary>
+site_name 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_url">
+	<summary>
+site_url 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_icp">
+	<summary>
+site_icp 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_smtp">
+	<summary>
+site_smtp 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_smtp_u">
+	<summary>
+site_smtp_u 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_smtp_p">
+	<summary>
+site_smtp_p 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.site_support">
+	<summary>
+site_support 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin_site.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="P:TaoNiu.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:TaoNiu.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:TaoNiu.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="F:TaoNiu.user_center_sale_pf.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_pf.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_pf.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_tg.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_tg.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_tg.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="M:TaoNiu.notify.GetRequestPost">
+	<summary>
+ 获取支付宝POST过来通知消息，并以“参数名=参数值”的形式组成数组
+ </summary>
+	<returns>request回来的信息组成的数组</returns>
+</member><member name="F:TaoNiu.site_front_withSearch.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.site_front_withSearch.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.site_front_withSearch.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.site_front_withSearch.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.listGoodType">
+	<summary>
+listGoodType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.rmGoodType">
+	<summary>
+rmGoodType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.addGoodType">
+	<summary>
+addGoodType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.listSaleType">
+	<summary>
+listSaleType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.rmSaleType">
+	<summary>
+rmSaleType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_type.addSaleType">
+	<summary>
+addSaleType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.orderRedirect.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.adType">
+	<summary>
+adType 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.adTitle">
+	<summary>
+adTitle 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.ad">
+	<summary>
+ad 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.advertisement.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.Button4">
+	<summary>
+Button4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.ListBox2">
+	<summary>
+ListBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.Button3">
+	<summary>
+Button3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.range.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_domain.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_domain.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_domain.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_domain.HyperLink1">
+	<summary>
+HyperLink1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_domain.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login3.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.payTo.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.payTo.Label1">
+	<summary>
+Label1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_pc.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_pc.ContentMain">
+	<summary>
+ContentMain 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.DropDownList1">
+	<summary>
+DropDownList1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.removeCat1">
+	<summary>
+removeCat1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.addCat1">
+	<summary>
+addCat1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.ListBox2">
+	<summary>
+ListBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.DropDownList2">
+	<summary>
+DropDownList2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.removeCat2">
+	<summary>
+removeCat2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button3">
+	<summary>
+Button3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button4">
+	<summary>
+Button4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.addCat2">
+	<summary>
+addCat2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.ListBox3">
+	<summary>
+ListBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.SqlDataSource3">
+	<summary>
+SqlDataSource3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.removeCat3">
+	<summary>
+removeCat3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.TextBox3">
+	<summary>
+TextBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.addCat3">
+	<summary>
+addCat3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button5">
+	<summary>
+Button5 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified_cat.Button6">
+	<summary>
+Button6 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="M:TaoNiu.feedback_add.btnSumbit_Click(System.Object,System.EventArgs)">
+	<summary>
+ 提交数据
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:TaoNiu.shop_certification.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Label1">
+	<summary>
+Label1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Label2">
+	<summary>
+Label2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Label3">
+	<summary>
+Label3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Label4">
+	<summary>
+Label4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.TextQQ">
+	<summary>
+TextQQ 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.TextTn">
+	<summary>
+TextTn 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.cart.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="P:TaoNiu.AlipayClass.AlipayNotify.Mysign">
+	<summary>
+ 获取通知返回后计算后（验证）的签名结果
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayNotify.ResponseTxt">
+	<summary>
+ 获取验证是否是支付宝服务器发来的请求结果
+ </summary>
+</member><member name="P:TaoNiu.AlipayClass.AlipayNotify.PreSignStr">
+	<summary>
+ 获取待签名的字符串（调试用）
+ </summary>
+</member><member name="M:TaoNiu.AlipayClass.AlipayNotify.#ctor(System.Collections.Generic.SortedDictionary{System.String,System.String},System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 构造函数
+ 从配置文件中初始化变量
+ </summary>
+	<param name="inputPara">通知返回来的参数数组</param>
+	<param name="notify_id">验证通知ID</param>
+	<param name="partner">合作身份者ID</param>
+	<param name="key">安全校验码</param>
+	<param name="input_charset">编码格式</param>
+	<param name="sign_type">签名类型</param>
+	<param name="transport">访问模式</param>
+</member><member name="M:TaoNiu.AlipayClass.AlipayNotify.Verify(System.String)">
+	<summary>
+ 验证是否是支付宝服务器发来的请求
+ </summary>
+	<returns>验证结果</returns>
+</member><member name="M:TaoNiu.AlipayClass.AlipayNotify.Get_Http(System.String,System.Int32)">
+	<summary>
+ 获取远程服务器ATN结果
+ </summary>
+	<param name="strUrl">指定URL路径地址</param>
+	<param name="timeout">超时时间设置</param>
+	<returns>服务器ATN结果</returns>
+</member><member name="T:TaoNiu.AlipayClass.AlipayNotify">
+	<summary>
+ 类名：alipay_notify
+ 功能：付款过程中服务器通知类
+ 详细：该页面是通知返回核心处理文件，不需要修改
+ 版本：3.1
+ 修改日期：2010-10-29
+ '说明：
+ 以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
+ 该代码仅供学习和研究支付宝接口使用，只是提供一个参考。
+ 
+ //////////////////////注意/////////////////////////////
+ 调试通知返回时，可查看或改写log日志的写入TXT里的数据，来检查通知返回是否正常 
+ </summary>
+</member><member name="F:TaoNiu.functions.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.admin.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.systitle">
+	<summary>
+systitle 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.obj_write">
+	<summary>
+obj_write 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerName">
+	<summary>
+ServerName 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerVer">
+	<summary>
+ServerVer 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerIP">
+	<summary>
+ServerIP 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerDomain">
+	<summary>
+ServerDomain 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerOutTime">
+	<summary>
+ServerOutTime 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerNow">
+	<summary>
+ServerNow 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerSessionTotal">
+	<summary>
+ServerSessionTotal 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerApplicationTotal">
+	<summary>
+ServerApplicationTotal 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.IISVer">
+	<summary>
+IISVer 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.NetVer">
+	<summary>
+NetVer 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ProPath">
+	<summary>
+ProPath 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ProPath_2">
+	<summary>
+ProPath_2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.ServerRunTime">
+	<summary>
+ServerRunTime 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_Access">
+	<summary>
+Obj_Access 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_Fso">
+	<summary>
+Obj_Fso 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_Jmail">
+	<summary>
+Obj_Jmail 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_Cdonts">
+	<summary>
+Obj_Cdonts 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_AspJpeg">
+	<summary>
+Obj_AspJpeg 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.obj_aspupload">
+	<summary>
+obj_aspupload 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.SelObj">
+	<summary>
+SelObj 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.SelfObjChk">
+	<summary>
+SelfObjChk 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Obj_SelfObj">
+	<summary>
+Obj_SelfObj 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_IP">
+	<summary>
+Brower_IP 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_OSVer">
+	<summary>
+Brower_OSVer 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_Brower">
+	<summary>
+Brower_Brower 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_BrowerVer">
+	<summary>
+Brower_BrowerVer 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_Javscript">
+	<summary>
+Brower_Javscript 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_VBScript">
+	<summary>
+Brower_VBScript 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_JavaApplets">
+	<summary>
+Brower_JavaApplets 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_Cookies">
+	<summary>
+Brower_Cookies 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_Language">
+	<summary>
+Brower_Language 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu._default1.Brower_Frame">
+	<summary>
+Brower_Frame 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="M:TaoNiu.AlipayClass.AlipayService.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 构造函数
+ 从配置文件及入口文件中初始化变量
+ </summary>
+	<param name="partner">合作身份者ID</param>
+	<param name="seller_email">签约支付宝账号或卖家支付宝帐户</param>
+	<param name="return_url">付完款后跳转的页面 要用 以http开头格式的完整路径，不允许加?id=123这类自定义参数</param>
+	<param name="notify_url">交易过程中服务器通知的页面 要用 以http开格式的完整路径，不允许加?id=123这类自定义参数</param>
+	<param name="show_url">网站商品的展示地址，不允许加?id=123这类自定义参数</param>
+	<param name="out_trade_no">请与贵网站订单系统中的唯一订单号匹配</param>
+	<param name="subject">订单名称，显示在支付宝收银台里的“商品名称”里，显示在支付宝的交易管理的“商品名称”的列表里。</param>
+	<param name="body">订单描述、订单详细、订单备注，显示在支付宝收银台里的“商品描述”里</param>
+	<param name="price">订单总金额，显示在支付宝收银台里的“商品单价”里</param>
+	<param name="logistics_fee">物流费用，即运费。</param>
+	<param name="logistics_type">物流类型，三个值可选：EXPRESS（快递）、POST（平邮）、EMS（EMS）</param>
+	<param name="logistics_payment">物流支付方式，三个值可选：SELLER_PAY（卖家承担运费）、BUYER_PAY（买家承担运费）</param>
+	<param name="quantity">商品数量，建议默认为1，不改变值，把一次交易看成是一次下订单而非购买一件商品。</param>
+	<param name="receive_name">收货人姓名，如：张三</param>
+	<param name="receive_address">收货人地址，如：XX省XXX市XXX区XXX路XXX小区XXX栋XXX单元XXX号</param>
+	<param name="receive_zip">收货人邮编，如：123456</param>
+	<param name="receive_phone">收货人电话号码，如：0571-81234567</param>
+	<param name="receive_mobile">收货人手机号码，如：13312341234</param>
+	<param name="logistics_fee_1">第二组物流费用，即运费。</param>
+	<param name="logistics_type_1">第二组物流类型，三个值可选：EXPRESS（快递）、POST（平邮）、EMS（EMS）</param>
+	<param name="logistics_payment_1">第二组物流支付方式，三个值可选：SELLER_PAY（卖家承担运费）、BUYER_PAY（买家承担运费）</param>
+	<param name="logistics_fee_2">第三组物流费用，即运费。</param>
+	<param name="logistics_type_2">第三组物流类型，三个值可选：EXPRESS（快递）、POST（平邮）、EMS（EMS）</param>
+	<param name="logistics_payment_2">第三组物流支付方式，三个值可选：SELLER_PAY（卖家承担运费）、BUYER_PAY（买家承担运费）</param>
+	<param name="buyer_email">默认买家支付宝账号</param>
+	<param name="discount">折扣，是具体的金额，而不是百分比。若要使用打折，请使用负数，并保证小数点最多两位数</param>
+	<param name="key">安全检验码</param>
+	<param name="input_charset">字符编码格式 目前支持 gbk 或 utf-8</param>
+	<param name="sign_type">加密方式 不需修改</param>
+</member><member name="M:TaoNiu.AlipayClass.AlipayService.Build_Form">
+	<summary>
+ 构造表单提交HTML
+ </summary>
+	<returns>输出 表单提交HTML文本</returns>
+</member><member name="T:TaoNiu.AlipayClass.AlipayService">
+	<summary>
+ 类名：alipay_service
+ 功能：支付宝外部服务接口控制
+ 详细：该页面是请求参数核心处理文件，不需要修改
+ 版本：3.1
+ 修改日期：2010-11-25
+ 说明：
+ 以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
+ 该代码仅供学习和研究支付宝接口使用，只是提供一个参考
+ </summary>
+</member><member name="M:TaoNiu.AlipayClass.AlipayService2.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 构造函数
+ 从配置文件及入口文件中初始化变量
+ </summary>
+	<param name="partner">合作身份者ID</param>
+	<param name="trade_no">支付宝交易号。它是登陆支付宝网站在交易管理中查询得到，一般以8位日期开头的纯数字（如：20100419XXXXXXXXXX） </param>
+	<param name="logistics_name">物流公司名称</param>
+	<param name="invoice_no">物流发货单号</param>
+	<param name="transport_type">物流发货时的运输类型，三个值可选：POST（平邮）、EXPRESS（快递）、EMS（EMS）</param>
+	<param name="seller_ip">卖家本地电脑IP地址</param>
+	<param name="key">安全检验码</param>
+	<param name="input_charset">字符编码格式 目前支持 gbk 或 utf-8</param>
+	<param name="sign_type">加密方式 不需修改</param>
+</member><member name="M:TaoNiu.AlipayClass.AlipayService2.Build_Form">
+	<summary>
+ 构造表单提交HTML
+ </summary>
+	<returns>输出 表单提交HTML文本</returns>
+</member><member name="M:TaoNiu.AlipayClass.AlipayService2.Create_url">
+	<summary>
+ 构造请求URL
+ </summary>
+	<returns>请求url</returns>
+</member><member name="M:TaoNiu.notify_money.GetRequestPost">
+	<summary>
+ 获取支付宝POST过来通知消息，并以“参数名=参数值”的形式组成数组
+ </summary>
+	<returns>request回来的信息组成的数组</returns>
+</member><member name="F:TaoNiu.feedback_add.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.feedback_add.questiontype">
+	<summary>
+questiontype 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.feedback_add.questiont">
+	<summary>
+questiont 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.feedback_add.btnSumbit">
+	<summary>
+btnSumbit 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.inCat.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.inCat.Label1">
+	<summary>
+Label1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.bbs_call.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.mall.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.Site_front.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.Site_front.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.Site_front.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.Site_front.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_zq.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_zq.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_zq.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox2">
+	<summary>
+ListBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox3">
+	<summary>
+ListBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.SqlDataSource3">
+	<summary>
+SqlDataSource3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox4">
+	<summary>
+ListBox4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.SqlDataSource4">
+	<summary>
+SqlDataSource4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox5">
+	<summary>
+ListBox5 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.SqlDataSource5">
+	<summary>
+SqlDataSource5 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.ListBox6">
+	<summary>
+ListBox6 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_property.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.id">
+	<summary>
+id 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.pass">
+	<summary>
+pass 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.safe">
+	<summary>
+safe 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.vdCode">
+	<summary>
+vdCode 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.ImageVd">
+	<summary>
+ImageVd 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.btLogin">
+	<summary>
+btLogin 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.shop_owner">
+	<summary>
+shop_owner 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.shop_name">
+	<summary>
+shop_name 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.shop_introduce">
+	<summary>
+shop_introduce 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.shop_address">
+	<summary>
+shop_address 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.shop_certification">
+	<summary>
+shop_certification 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_add.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.TextBox3">
+	<summary>
+TextBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.shop_certification_type.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.shif">
+	<summary>
+shif 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.goods">
+	<summary>
+goods 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_search.SqlDataSource3">
+	<summary>
+SqlDataSource3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.DropDownList1">
+	<summary>
+DropDownList1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.removeCat1">
+	<summary>
+removeCat1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.addCat1">
+	<summary>
+addCat1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.ListBox2">
+	<summary>
+ListBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.DropDownList2">
+	<summary>
+DropDownList2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.removeCat2">
+	<summary>
+removeCat2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button3">
+	<summary>
+Button3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button4">
+	<summary>
+Button4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.addCat2">
+	<summary>
+addCat2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.ListBox3">
+	<summary>
+ListBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.removeCat3">
+	<summary>
+removeCat3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.TextBox3">
+	<summary>
+TextBox3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.addCat3">
+	<summary>
+addCat3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button5">
+	<summary>
+Button5 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_categories.Button6">
+	<summary>
+Button6 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.TextBox1">
+	<summary>
+TextBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.TextBox2">
+	<summary>
+TextBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.announcement.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.formLogin">
+	<summary>
+formLogin 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.uid">
+	<summary>
+uid 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.password">
+	<summary>
+password 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.btLogin">
+	<summary>
+btLogin 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login1.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.search.Label1">
+	<summary>
+Label1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.classified.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lianMeng.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lianMeng.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lianMeng.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lianMeng.ListBox2">
+	<summary>
+ListBox2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.shopId">
+	<summary>
+shopId 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.ownerId">
+	<summary>
+ownerId 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.cat1">
+	<summary>
+cat1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.cat2">
+	<summary>
+cat2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.cat3">
+	<summary>
+cat3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.SqlDataSource3">
+	<summary>
+SqlDataSource3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_type">
+	<summary>
+goods_type 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.SqlDataSource4">
+	<summary>
+SqlDataSource4 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_sale_type">
+	<summary>
+goods_sale_type 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.SqlDataSource5">
+	<summary>
+SqlDataSource5 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_title">
+	<summary>
+goods_title 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_prize">
+	<summary>
+goods_prize 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.discount1">
+	<summary>
+discount1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.discount2">
+	<summary>
+discount2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_info_list">
+	<summary>
+goods_info_list 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_info_add">
+	<summary>
+goods_info_add 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.info_add">
+	<summary>
+info_add 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_picture">
+	<summary>
+goods_picture 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_introduce">
+	<summary>
+goods_introduce 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_number">
+	<summary>
+goods_number 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_on_sale_date">
+	<summary>
+goods_on_sale_date 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.sale_year">
+	<summary>
+sale_year 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.sale_month">
+	<summary>
+sale_month 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.sale_day">
+	<summary>
+sale_day 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.sale_hour">
+	<summary>
+sale_hour 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.sale_min">
+	<summary>
+sale_min 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_tuijian">
+	<summary>
+goods_tuijian 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_range">
+	<summary>
+goods_range 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_Period">
+	<summary>
+goods_Period 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_invoice">
+	<summary>
+goods_invoice 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_warranty_type">
+	<summary>
+goods_warranty_type 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_warranty_time">
+	<summary>
+goods_warranty_time 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.goods_warranty_other">
+	<summary>
+goods_warranty_other 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_add.btPub">
+	<summary>
+btPub 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.ListBox1">
+	<summary>
+ListBox1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.Button1">
+	<summary>
+Button1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.TextName">
+	<summary>
+TextName 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.TextStart">
+	<summary>
+TextStart 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.TextEnd">
+	<summary>
+TextEnd 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.TextFee">
+	<summary>
+TextFee 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.trusteeship_type.Button2">
+	<summary>
+Button2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="M:TaoNiu.AlipayClass.AlipayFunction.Para_filter(System.Collections.Generic.SortedDictionary{System.String,System.String})">
+	<summary>
+ 除去数组中的空值和签名参数并以字母a到z的顺序排序
+ </summary>
+	<param name="dicArrayPre">过滤前的参数组</param>
+	<returns>过滤后的参数组</returns>
+</member><member name="M:TaoNiu.AlipayClass.AlipayFunction.Sign(System.String,System.String,System.String)">
+	<summary>
+ 签名字符串
+ </summary>
+	<param name="prestr">需要签名的字符串</param>
+	<param name="sign_type">签名类型</param>
+	<param name="_input_charset">编码格式</param>
+	<returns>签名结果</returns>
+</member><member name="M:TaoNiu.AlipayClass.AlipayFunction.log_result(System.String,System.String)">
+	<summary>
+ 写日志，方便测试（看网站需求，也可以改成把记录存入数据库）
+ </summary>
+	<param name="sPath">日志的本地绝对路径</param>
+	<param name="sWord">要写入日志里的文本内容</param>
+</member><member name="M:TaoNiu.AlipayClass.AlipayFunction.Query_timestamp(System.String)">
+	<summary>
+ 用于防钓鱼，调用接口query_timestamp来获取时间戳的处理函数
+ 注意：远程解析XML出错，与IIS服务器配置有关
+ </summary>
+	<param name="partner">合作身份者ID</param>
+	<returns>时间戳字符串</returns>
+</member><member name="T:TaoNiu.AlipayClass.AlipayFunction">
+	<summary>
+ 功能：支付宝接口公用函数类
+ 详细：该类是请求、通知返回两个文件所调用的公用函数核心处理文件，不需要修改
+ 版本：3.1
+ 修改日期：2010-10-29
+ 说明：
+ 以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
+ 该代码仅供学习和研究支付宝接口使用，只是提供一个参考。
+ </summary>
+</member><member name="F:TaoNiu.reg.user_reg">
+	<summary>
+user_reg 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.reg.ImageVd">
+	<summary>
+ImageVd 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_list.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_list.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_lm_list.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_jf.shop">
+	<summary>
+shop 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.user_center_sale_jf.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.login2.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.order1.Form1">
+	<summary>
+Form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.order1.Label1">
+	<summary>
+Label1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.agent.Head1">
+	<summary>
+Head1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.agent.head">
+	<summary>
+head 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.agent.ContentHeader">
+	<summary>
+ContentHeader 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.agent.ContentContent">
+	<summary>
+ContentContent 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.agent.ContentFooter">
+	<summary>
+ContentFooter 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.form1">
+	<summary>
+form1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.list_hd_home">
+	<summary>
+list_hd_home 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.SqlDataSource1">
+	<summary>
+SqlDataSource1 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.del_hd_home">
+	<summary>
+del_hd_home 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.home_hd_title">
+	<summary>
+home_hd_title 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.home_hd_src">
+	<summary>
+home_hd_src 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.home_hd_img">
+	<summary>
+home_hd_img 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.hd_add">
+	<summary>
+hd_add 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.list_cat">
+	<summary>
+list_cat 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.SqlDataSource2">
+	<summary>
+SqlDataSource2 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.cat_hd">
+	<summary>
+cat_hd 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.SqlDataSource3">
+	<summary>
+SqlDataSource3 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.del_hd_cat">
+	<summary>
+del_hd_cat 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.cat_hd_title">
+	<summary>
+cat_hd_title 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.cat_hd_src">
+	<summary>
+cat_hd_src 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.cat_hd_img">
+	<summary>
+cat_hd_img 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member><member name="F:TaoNiu.goods_cat_firstShow.cat_hd_add">
+	<summary>
+cat_hd_add 控件。
+</summary>
+	<remarks>
+自动生成的字段。
+若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+</remarks>
+</member>
+</members>
+</doc>

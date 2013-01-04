@@ -1,0 +1,91 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/template/site_front.Master" AutoEventWireup="false"
+    CodeBehind="site_front_withSearch.master.vb" Inherits="TaoNiu.site_front_withSearch" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentHeader" runat="server">
+    <div id="logoSearch" class="clear">
+        <a id="logo" href="default.aspx" target="_parent" title="桃牛网"></a>
+        <div id="searchBox">
+            <ul id="searchBy">
+                <li name="goods" class="selected">搜商品</li><li name="place">搜店铺</li></ul>
+            <form name="search" action="search.aspx" method="get" id="Myform">
+            <div class="formClass">
+                <ul id="sRange1">
+                    <%Call getGoodRange()%></ul>
+                <input type="text" id="sRange2" value="地点" name="p" />
+                <div id="shanjiao">
+                    &nbsp;</div>
+                <input type="text" name="q" value="输入您想寻找的的宝贝" id="queryStr" />
+                <button type="submit">
+                    搜索</button>
+                <div class="clear ie6">
+                </div>
+            </div>
+            </form>
+        </div>
+        <div id="funNav">
+            <!-- <a id="userReg" href="reg.aspx">免费注册</a>
+            <%If Session("onTheWay") = "loginSuccess" Then%>
+            <a id="openShop" href="user_center_newShop.aspx">免费开店</a>
+            <%Else%>
+            <a id="openShop" href="login.aspx?redirectURL=user_center_newShop.aspx?at=newShop">免费开店</a>
+            <%End If%>
+            <a id="bbs" href="http://bbs.itaoniu.com">论坛</a>
+            -->
+            <div class="weather">
+            </div>
+            <iframe src="http://m.weather.com.cn/m/pn8/weather.htm?id=101300301T" width="222" height="20"
+                marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    
+    <div id="feedback">
+        <div class="feedhead"><span>提点建议</span><div id="feedClose"></div></div>
+        <div id="yijian">
+        <h3>
+            说说我使用搜索的感受:</h3>
+        <h4>
+            <input type="radio" name="yijian" />满意</h4>    
+        <h4>
+            <input type="radio" name="yijian" />不满意</h4>
+        </div>
+        <ul>
+            <%getNotSatisfied %>
+        </ul>    
+        <ul>
+         <%getSatisfied()%>
+        </ul>
+        <div id="feedText">
+        <p>将您对桃牛搜索的建议或者想法告诉我们吧!</p>
+        <!--input type="text" name="Contents"/-->
+        <textarea id="feedContent" rows="5" cols="40" name="Contents"></textarea>
+        <input type="button" value="提交" name="btnSubmit" class="subFeed"  />
+       </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentFooter" runat="server">
+    <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+    </asp:ContentPlaceHolder>
+    <a href="javascript:void(0);" id="here">意见反馈</a>
+    <script type="text/javascript">
+        //<![CDATA[
+            tn.setSearchBox();
+            tn.setSearchBy();
+            tn.setSearchList();
+            tn.liAddClass();
+            tn.feedback();
+            <%CALL callSetOnline() %>
+        //]]>
+    </script>
+</asp:Content>

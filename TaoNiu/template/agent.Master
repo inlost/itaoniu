@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="agent.master.vb" Inherits="TaoNiu.agent" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head id="Head1" runat="server">
+	<meta charset="gbk"> 
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%
+        Server.Execute("../server_page/header.aspx?place=agent")
+    %>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+        <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="content">
+            <div id="sidebar">
+                <ul id="main_list">
+                    <li><a <% Call setId("商品录入")%> href="<%call siteUrl() %>agent/default.aspx"><span>商品录入</span></a></li>
+                    <li><a <% Call setId("录入列表")%> href="<%call siteUrl() %>agent/taskList.aspx?at=tl"><span>录入列表</span></a></li>
+                    <li><a href="<%call siteUrl() %>default.aspx"><span>返回首页</span></a></li>
+                </ul>
+            </div>
+        <asp:ContentPlaceHolder ID="ContentContent" runat="server">
+
+        </asp:ContentPlaceHolder>        
+        </div>
+
+        <div id="footer">
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        
+        </asp:ContentPlaceHolder>        
+        </div>
+    </div>
+</body>
+</html>

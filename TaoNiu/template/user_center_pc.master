@@ -1,0 +1,59 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/template/user_center.Master" AutoEventWireup="false" CodeBehind="user_center_pc.master.vb" Inherits="TaoNiu.user_center_pc" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentHeader" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentContent" runat="server">
+<div id="operateArea">
+    <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <div id="pCenter">
+        <div id="pCenterBox">
+        <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+          
+        </asp:ContentPlaceHolder> 
+   
+        </div>  
+        <div id="aside">
+            <ul class="userstats clearfix">
+                <li class="my-newsfeed selected" id="mod-newsfeedlist-link"><a>最新动态</a></li>
+                <li class="following-count" id="mod-following-link"><a>我关注了<span>15</span>个博客</a></li>
+                <li class="my-fav" id="mod-favo-link"><a>我的喜欢</a></li>
+            </ul>
+            <div class="tumble-log-holder">
+                <div class="tumble-log">
+                    <a id="current-tumble-log"><span>那个白</span></a>
+                </div>
+                <ul id="tumblr-log-list" style="display: none; ">
+                    <li class="current-tumble-log">
+                        <a>那个白</a>
+                    </li><li class="new-tumble-log">
+                        <a href="http://www.diandian.com/new/blog">+ 再创建一个博客</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="feed-filter">
+                <ul>
+                    <li class="personal-url"><a href="http://inlost.diandian.com">inlost.diandian.com</a></li>
+                    <li class="my-post"><a id="mod-tumblefeedlist-link"><span class="post-count">16</span>篇文章</a></li>
+                    <li class="follower-count">
+                        <a id="mod-follower-link"><span class="follower-count">13</span>个关注者</a></li><li class="filter-customize"><a href="http://www.diandian.com/customize/inlost">自定义</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="separator"/>
+            <div class="my-tag sidebox">
+                <h5>我收藏的标签</h5>
+                <div class="sidebox-ct">
+                    <a class="explore-link" href="http://www.diandian.com/wall/">发现点点</a>
+                </div>
+            </div>
+            <hr class="separator">
+        </div>
+        <div id="back_top"></div>
+    </div>
+</div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentFooter" runat="server">
+</asp:Content>

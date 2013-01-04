@@ -1,0 +1,93 @@
+﻿body, h1, h2, h3, h4, h5, h6, hr, p,blockquote,dl, dt, dd, ul, ol, li,pre,form, fieldset, legend, input, textarea,th,td,img{  
+  border:medium none;  
+  margin: 0;  
+  padding: 0;  
+}  
+body,button, input, select, textarea {  
+  font: 12px/1.5 '宋体',tahoma, Srial, helvetica, sans-serif;  
+}  
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }  
+em{ font-style:normal;}  
+ul, ol { list-style: none; } 
+
+#page{
+	width:990px;
+	margin:0 auto;
+}
+#header{
+	height:80px;
+	background:#eee;
+}
+#content{
+	
+}
+#footer{
+	height:130px;
+	background:#ccc;
+}
+
+/* 清空浮动*/
+.afterClear:after{
+	display:block;
+	content:'.';
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
+.afterClear{ zoom:1; }
+/* post */
+.nav_ul li{
+	float:left;
+	width:100px;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+}
+.post_ul .tab_li{
+	float:left;
+	position:relative;
+	width:440px;
+	text-indent:15px;
+	font-size:14px;
+}
+.post_ul .tab_li a{
+	display:block;
+	width:120px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #fff;
+}
+.ym_sub{
+	position:absolute;
+	display:none;
+	left:120px;
+	top:0;
+}
+.ym_sub li{
+	float:left;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
